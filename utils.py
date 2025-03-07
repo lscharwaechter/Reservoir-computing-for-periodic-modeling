@@ -32,4 +32,6 @@ def getEchoStateProperty(matrix, spectralRadius):
     with a spectral radius < 1
     '''
     currentRadius = np.max(np.abs(np.linalg.eigvals(matrix)))
+    if currentRadius == 0:
+        currentRadius = 1e-6
     return matrix / currentRadius * spectralRadius
