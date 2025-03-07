@@ -16,7 +16,7 @@ def initialize_ESN(n_input = 1, n_reservoir = 40, n_output = 1, scalingfactor = 
     Wout = np.zeros((n_reservoir, n_output))
     
     # Scale matrices
-    Win = scaleMatrix(Win, scalingFactor = 1.0) 
+    Win = scaleMatrix(Win, scalingFactor = 1.0) # 1.0 for test purposes
     Wr = scaleMatrix(Wr, scalingFactor = 0.01)
     Wfb = scaleMatrix(Wfb, scalingFactor = 0.01)
     
