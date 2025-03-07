@@ -3,6 +3,6 @@ This is a work-in-progess project to model the periodic behavior of superimposed
 
 A further approach to find sufficient parameter values is by using Evolutionary Algorithms. In the future, this project aims to apply Differential Evolution (DE) with typical parameters like Population Size, Maximum Number of Generations, Mutation Rate and Crossing Over probability (e.g. by scipy.optimize.differential_evolution).
 
-![Scheme2](https://user-images.githubusercontent.com/56418155/154161445-821c6cc4-4b8d-49a9-9ff9-a6cba1c56f9f.png)
+![ESNfigure2](https://github.com/user-attachments/assets/9f64b688-32c1-450f-bf33-d4089f62125d)
 
-In the plot above a superimposed sine wave is generated as the target signal $x^t$ by summing up two sine waves with frequencies $f_1 = \frac{1}{5}$ and $f_2 = \frac{1}{2}$ and amplitudes $a_1 = 0.9$ and $a_2 = 0.4$. The figure on the right illustrates the Echo State Network with its weight matrices and the reservoir as a hidden, recurrent layer.
+In the plot above a superimposed sine wave is generated as the target signal $x^t$ by summing up two sine waves with frequencies $f_1 = \frac{1}{5}$ and $f_2 = \frac{1}{2}$ and amplitudes $a_1 = 0.9$ and $a_2 = 0.4$. The orange signal represents the learned signal echo of the network. The figure on the right illustrates the scheme of the Echo State Network with its weight matrices and the reservoir as a hidden, recurrent layer.
