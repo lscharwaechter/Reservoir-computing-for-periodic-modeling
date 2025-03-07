@@ -68,11 +68,11 @@ class ESN():
         prevt = trainingSteps
         for t in range(testingSteps):
             t = t + trainingSteps  # Update time step
-    
+            
             # Reset states before accumulation
             self.net_h[:, t] = 0  # Reset net input
             self.net_hk[:, t] = 0  # Reset output
-    
+            
             # Integrate feedback 
             self.net_h[:, t] += np.dot(self.Wfb.T, cl_output)
     
